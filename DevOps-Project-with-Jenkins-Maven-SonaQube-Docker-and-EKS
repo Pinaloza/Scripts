@@ -37,7 +37,7 @@ $ cd .ssh
     $ wget -qO- https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo tee /etc/apt/trusted.gpg.d/pgdg.asc &>/dev/null
 ## Install PostgreSQL
     $ sudo apt update
-    $ sudo apt-get -y install postgresql postgresql-contrib
+    $ sudo apt-get -y install postgresql-16 postgresql-client-16 postgresql-contrib
     $ sudo systemctl enable postgresql
 ## Create Database for Sonarqube
     $ sudo passwd postgres
